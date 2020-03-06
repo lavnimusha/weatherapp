@@ -33,7 +33,7 @@ class App extends React.Component {
     this.setState({ address });
     geocodeByAddress(address)
       .then(results => getLatLng(results[0]))
-        .then(latLng => {fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latLng.lat}&lon=${latLng.lng}&units=metric&appid=AIzaSyBig-SK4CZQ5mUx1kEmGmswVyiP7Hr9a-M`)
+        .then(latLng => {fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latLng.lat}&lon=${latLng.lng}&units=metric&appid=f04cdca73c381c05cf9dfd807c84353d`)
           .then(response => response.json())
             .then((jsonData) => {
 
